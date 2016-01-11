@@ -1,0 +1,30 @@
+markdown: kramdown
+
+permalink: none
+baseurl: /~cr173/Sta323_Sp16
+
+lang: en
+
+name: Sta 323
+name_long: Statistical Computing
+semester: Spring 2016
+author: Colin Rundel
+email: rundel@gmail.com
+page_title: Sta 323
+
+exclude: [Makefile]
+
+future: true
+
+topbar:
+  - name: Schedule
+    url: /
+  - name: Software
+    url: /software/
+  - name: Info
+    url: /info/
+  - name: Syllabus
+    url: /syllabus/
+  - name: Github
+    url: https://github.com/Sta323-Sp16
+    absolute: true

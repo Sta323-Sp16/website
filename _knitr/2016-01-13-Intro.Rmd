@@ -1,0 +1,40 @@
+---
+layout: page
+title: Introduction
+reading: "Codeschool - <a href='https://www.codeschool.com/courses/try-r'>Try R</a>"
+notes: ""
+output: 
+    ioslides_presentation:
+        widescreen: true
+slides: false
+link: false
+---
+
+# Introduction
+
+## Groups
+
+* Group assignments and Survey
+* Expectations and roles
+
+## Policies
+
+* Plagiarism
+* Homework
+* Late work
+
+## Reproducible Research
+
+* RStudio
+    + Knitr
+    + rmarkdown
+
+* Git
+    + github
+
+## For next time
+
+* Complete the course survey
+* Install recommended software
+* Create a github account
+* Email if can't login in to [saxon](http://saxon.stat.duke.edu:8787)

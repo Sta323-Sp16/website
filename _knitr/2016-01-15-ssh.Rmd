@@ -1,0 +1,55 @@
+---
+layout: page
+title: Configuring ssh
+reading: ""
+notes: ""
+output: 
+    ioslides_presentation:
+        widescreen: true
+slides: false
+link: false
+---
+
+# ssh
+
+## Secure shell (ssh)
+
+* A secure tool for connecting and interacting with remote systems
+* Uses public key encryption
+* Run a single command or work interactively
+* Lots of other neat tricks (proxy, port forwarding, many more)
+
+## Connecting to saxon
+
+* Everyone should have a visitor account of the stats servers now
+* Try to connect to make sure everything is working...
+
+```
+$ ssh cr173@saxon.stat.duke.edu
+The authenticity of host 'saxon.stat.duke.edu (152.3.7.55)' can't be established
+.
+RSA key fingerprint is 74:30:5a:d0:cd:a8:d2:6f:a6:e9:c6:80:bb:eb:b4:ba.
+Are you sure you want to continue connecting (yes/no)?yes
+cr173@saxon.stat.duke.edu's password:
+[cr173@saxon ~]$
+```
+
+## Working remotely
+
+You should now be able to run commands remotely on `saxon`. We can interactively run commands on the remote system. Try `hostname` to see which system you are connected to, and `whoami` to see your user name.
+
+```
+cr173@saxon [~]$ hostname
+saxon.stat.duke.edu
+cr173@saxon [~]$ whoami
+cr173
+```
+
+## Finishing up
+
+Once you are done on the server you can exit by:
+
+* Running `exit`
+* Ctrl-D
+* Wait long enough (connection will time out)
+
