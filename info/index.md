@@ -10,14 +10,15 @@ title: Course Information
 * [R Packages](http://r-pkgs.had.co.nz/) - Wickham \\
     O’Reilly, 1st edition, 2015 (ISBN: 978-1491910597)
 
-
+* [R for Data Science](http://r4ds.had.co.nz/) - Grolemund, Wickham \\
+    O’Reilly, 1st edition, 2016 (ISBN:)
 
 ###Lectures:
-* Mondays and Wednesdays, 4:40 pm - 5:55 pm, Perkins Link 71 (Classroom 5)
+* Mondays and Wednesdays, 4:40 pm - 5:55 pm, Perkins Link 071 (Classroom 5)
 
 
 ### Labs:
-* 01L - Fridays 1:25 - 2:40 pm, Perkins Link 71 (Classroom 5)
+* 01L - Fridays 1:25 - 2:40 pm, Perkins Link 071 (Classroom 5)
 
 
 ### Office Hours:
