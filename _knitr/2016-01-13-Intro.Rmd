@@ -6,35 +6,67 @@ notes: ""
 output: 
     ioslides_presentation:
         widescreen: true
-slides: false
-link: false
+slides: true
+link: true
 ---
 
-# Introduction
+
+## Policies {.smaller}
+
+* Plagiarism
+    + Use online resources but make sure to cite them
+    + No direct code sharing between groups
+* Homework
+    + Group based, everyone is equally responsible
+* Late work
+    + late, but same day: -10%
+    + late, next day:  -20%
+    + 2 days or later: no credit
+* Exams
+    + 2 Midterms & 1 Final, take home
+
+## Grading
+
+
+  Component      Percentage
+-------------  --------------
+Participation    10%
+Homework         40%
+Midterm 1        10%
+Midterm 2        10%
+Final Project    10%
+Final Exam       20%
+
 
 ## Groups
 
-* Group assignments and Survey
+* Group homework assignments
+    + Roughly biweekly assignments
+    + Open ended
+    + 10 - 20 hours of work each
+
 * Expectations and roles
+    + Everyone is expected to contribute equally
+    + Everyone is expected to understand *all* code turned in
+    + Individual contribution evaluated by peer assessment
 
-## Policies
+* Survey
 
-* Plagiarism
-* Homework
-* Late work
 
-## Reproducible Research
+## Reproducible Research / Computing
 
-* RStudio
-    + Knitr
-    + rmarkdown
+* Unix shell
 
-* Git
-    + github
+* R + RStudio
 
-## For next time
+* rmarkdown + make
 
-* Complete the course survey
-* Install recommended software
+* Git + github
+
+
+## For Friday
+
 * Create a github account
-* Email if can't login in to [saxon](http://saxon.stat.duke.edu:8787)
+* Complete the course survey (email tonight)
+* Install recommended [software](https://stat.duke.edu/~cr173/Sta323_Sp16/software/)
+* ~~Email if can't login in to [gort](http://gort.stat.duke.edu:8787)~~
