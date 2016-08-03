@@ -1,0 +1,13 @@
+---
+layout: page
+title: Raster Data in R
+reading: ""
+notes: "Screencast - <a href='https://www.youtube.com/watch?v=Ur8Gd09e0k0'>Raster / Prediction Demo</a>"
+output: 
+    ioslides_presentation:
+        widescreen: true
+        smaller: true
+slides: false
+link: false
+---
+

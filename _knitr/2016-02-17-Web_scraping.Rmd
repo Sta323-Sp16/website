@@ -1,0 +1,166 @@
+---
+layout: page
+title: Web Scraping
+reading: "<a href='https://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html'>rvest and Selectorgadget</a>"
+notes: "<a href='hw/hw3.html'>HW 3</a> - due Mon 03/07 by 11 pm <br/> Screencast - <a href='https://www.youtube.com/watch?v=d2m2OEjC2Zs'>Part 1</a>, <a href='https://www.youtube.com/watch?v=q3BFOn0N-m8'>Part 2</a>"
+output: 
+    ioslides_presentation:
+        widescreen: true
+slides: true
+link: true
+---
+
+```{r echo=FALSE}
+library(magrittr)
+```
+
+# Pipes
+
+## magrittr {.smaller}
+
+<div class="centered">
+<div style="margin-top: -50px;">
+<img src="imgs/magritte.jpg" height="175px" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="imgs/magrittr.jpeg" height="175px" />
+</div>
+</div>
+
+You can think about the following sequence of actions - find key, unlock car, start car, drive to school, park.
+
+Expressed as a set of nested functions in R pseudocode this would look like:
+
+```{r eval=FALSE}
+park(drive(start_car(find("keys")), to="campus"))
+```
+
+Writing it out using pipes give it a more natural (and easier to read) structure:
+
+```{r eval=FALSE}
+find("keys") %>%
+    start_car() %>%
+    drive(to="campus") %>%
+    park()
+```
+
+## Approaches {.smaller}
+
+All of the following are fine, it amounts to preference.
+
+<br/>
+
+Nested:
+
+```{r, eval=FALSE}
+h( g( f(x), y=1), z=1 )
+```
+
+Piped:
+
+```{r, eval=FALSE}
+f(x) %>% g(y=1) %>% h(z=1)
+```
+
+Intermediate:
+```{r, eval=FALSE}
+res = f(x)
+res = g(res, y=1)
+res = h(res, z=1)
+```
+
+## What about other arguments? {.smaller}
+
+Sometimes we want to send our results to an function argument other than first one or we want to use the previous result for multiple arguments. In these cases we can refer to the previous result using `.`.
+
+```{r}
+data.frame(a=1:3,b=3:1) %>% lm(a~b,data=.)
+data.frame(a=1:3,b=3:1) %>% .[[1]]
+data.frame(a=1:3,b=3:1) %>% .[[length(.)]]
+```
+
+
+
+# Web Scraping with rvest
+
+## Hypertext Markup Language
+
+Most of the data on the web is still largely available as HTML - while it is structured (hierarchical / tree based) it often is not available in a form useful for analysis (flat / tidy).
+
+```html
+<html>
+  <head>
+    <title>This is a title</title>
+  </head>
+  <body>
+    <p align="center">Hello world!</p>
+  </body>
+</html>
+```
+
+## rvest {.smaller}
+
+`rvest` is a package from Hadley Wickham that makes basic processing and manipulation of HTML data straight forward.
+
+<br/>
+
+Core functions:
+
+* `read_html` - read HTML data from a url or character string.
+
+* `html_nodes` - select specified nodes from the HTML document usign CSS selectors.
+
+* `html_table` - parse an HTML table into a data frame.
+
+* `html_text` - extract tag pairs' content.
+
+* `html_name` - extract tags' names.
+
+* `html_attrs` - extract all of each tag's attributes.
+
+* `html_attr` - extract tags' attribute value by name.
+
+
+## css selectors {.smaller}
+
+We will be using a tool called selector gadget to help up identify the html elements of interest - it does this by constructing a css selector which can be used to subset the html document.
+
+<br/>
+
+Selector            Example               Description
+------------      ------------------      --------------------------------------------------
+element             `p`                   Select all &lt;p&gt; elements
+element element     `div p`               Select all &lt;p&gt; elements inside a &lt;div&gt; element
+element>element     `div > p`             Select all &lt;p&gt; elements with &lt;div&gt; as a parent
+.class              `.title`              Select all elements with class="title"
+#id                 `.name`               Select all elements with id="name"
+[attribute]         `[class]`             Select all elements with a class attribute
+[attribute=value]   `[class=title]`       Select all elements with class="title"
+
+## Live Demo
+
+<br/><br/><br/><br/>
+
+<div class="centered">
+<div style="font-size:175%">
+... because `rmarkdown` hates `rvest` for whatever reason ...
+</div>
+</div>
+
+
+## Exercise
+
+For the *first five* movies in the **Now Playing (Box Office)** list on `imdb.com` create a data frame with the Movies' titles, their weekend gross, and the url of their poster.
+
+This will involve multiple steps:
+
+* Using the main imdb page find the title, gross, and the movie specific url within IMDB.
+
+* Examine each movie subpage to find the poster urls. Hint - the same approach should work for all five pages since imdb's movie pages all have the same structure.
+
+<br/>
+
+<div class="centered">
+<div style="font-size:125%">
+The only hard coded url you should be using is `imdb.com`.
+</div>
+</div>

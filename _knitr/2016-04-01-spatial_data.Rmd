@@ -1,0 +1,13 @@
+---
+layout: page
+title: Spatial Data in R
+reading: ""
+notes: "Midterm 2 out - due by 11 pm 4/7 <br/> Screencast - <a href='https://www.youtube.com/watch?v=P5osIMZV7SM'>Pluto GIS Demo</a>"
+output: 
+    ioslides_presentation:
+        widescreen: true
+        smaller: true
+slides: false
+link: false
+---
+

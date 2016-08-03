@@ -1,0 +1,11 @@
+---
+layout: page
+title:  Work on HW 5
+reading:
+notes: <a href='scoreboard.html'>HW5 Scoreboard</a>
+output: 
+    ioslides_presentation:
+        widescreen: true
+slides: false
+link: false
+---

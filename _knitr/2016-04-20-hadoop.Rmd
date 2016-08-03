@@ -1,0 +1,9 @@
+---
+layout: page
+title: Rhipe & Hadoop 
+reading: "<a href='http://tessera.io/docs-RHIPE/'>Rhipe tutorial</a>"
+notes: "Screencast - <a href=''>Rhipe</a>" 
+slides: false
+link: false
+---
+

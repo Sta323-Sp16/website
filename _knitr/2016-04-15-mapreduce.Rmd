@@ -1,0 +1,9 @@
+---
+layout: page
+title: MapReduce 
+reading: ""
+notes: <a href='hw/hw6.html'>Homework 6</a> - due 05/01 by 11 pm"
+slides: false
+link: false
+---
+

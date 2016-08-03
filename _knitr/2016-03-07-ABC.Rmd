@@ -1,0 +1,8 @@
+---
+layout: page
+title: RNGs and ABC
+reading: ""
+notes: "Screencast - <a href='https://www.youtube.com/watch?v=ta2fMNPFYFQ'>ABC Example</a>"
+slides: false
+link: false
+---

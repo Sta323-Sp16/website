@@ -1,0 +1,9 @@
+---
+layout: page
+title: Web Scraping (cont.)
+reading: ""
+notes: "Midterm 1 - due Mon, 2/22 by 11 pm <br/> Screencast - <a href='https://www.youtube.com/watch?v=Z6rI6qFdH1o'>Scraping LQ</a>"
+slides: false
+link: false
+---
+

@@ -1,0 +1,11 @@
+---
+layout: page
+title:  "<a href='GP_Lec/GP_Computation.pdf'>Gaussian Processes and GPUs</a>"
+reading:
+notes:
+output: 
+    ioslides_presentation:
+        widescreen: true
+slides: false
+link: false
+---

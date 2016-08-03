@@ -26,8 +26,8 @@ title: Course Information
     * Tuesdays, 1:00 - 3:00 pm
     * or by appointment
 * Teaching Assistants
-    * [Michael Lindon](mailto:msl33@stat.duke.edu) - TBD
-    * [Dipesh Gautam](mailto:dipesh.gautam@duke.edu) - TBD
+    * [Michael Lindon](mailto:msl33@stat.duke.edu) - Mondays 1:30 - 3:30 pm, Old Chem 211A
+    * [Dipesh Gautam](mailto:dipesh.gautam@duke.edu) - Thursdays 12:30 - 2:30 pm, Old Chem 211A
 
 
 

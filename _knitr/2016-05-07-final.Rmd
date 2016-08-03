@@ -1,0 +1,13 @@
+---
+layout: page
+title: Final exam and project due by noon
+reading: ""
+notes: ""
+output: 
+    ioslides_presentation:
+        widescreen: true
+        smaller: true
+slides: false
+link: false
+---
+
